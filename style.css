@@ -81,6 +81,7 @@ button{
     padding: .8rem;
     border-radius: .25rem;
     text-transform: uppercase;
+    box-shadow: 0px 0.2em rgb(93 154 126);
     background-color: hsl(154, 59%, 51%);
     margin-bottom: 1rem;
 }
@@ -98,5 +99,8 @@ form p a{
 @media only screen and (max-width: 800px) {
     .hero-wrapper{
         flex-direction: column;
+    }
+    .form{
+        padding: 2rem 1rem;
     }
   }
