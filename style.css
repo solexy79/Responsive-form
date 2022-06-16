@@ -1,8 +1,31 @@
-.page-padding{
-    padding: 0 5vw
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
 }
+
+body{
+    color: hsl(0, 0%, 95%);
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+}
+
 .hero-section{
-    
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(./images/bg-intro-desktop.png);
+    padding: 5rem 0;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.page-padding{
+    padding: 0 5vw;
 }
 
 .hero-wrapper{
@@ -10,4 +33,70 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    gap: 60px;
 }
+.hero-text-wrapper{
+    max-width: 30rem;
+}
+h1{
+    font-size: 2.5rem;
+    color: white;
+    line-height: 1.2;
+}
+.hero-paragraph{
+    margin: 1.5rem 0 0;
+}
+.form-block{
+    max-width: 30rem;
+}
+.form-header{
+    background-color: hsl(248, 32%, 49%);
+    padding: 1rem;
+    text-align: center;
+    border-radius: .5rem;
+    font-size: .8rem;
+    box-shadow: 0px 0.5rem rgb(219 112 112);
+}
+strong{
+    color: white;
+}
+.form input{
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: .25rem;
+    margin-bottom: 1rem;
+}
+
+.form{
+    margin-top: 2rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+button{
+    width: 100%;
+    color: white;
+    padding: .8rem;
+    border-radius: .25rem;
+    text-transform: uppercase;
+    background-color: hsl(154, 59%, 51%);
+    margin-bottom: 1rem;
+}
+
+form p{
+    color:hsl(246, 25%, 77%);
+    font-size: 12px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+form p a{
+    color: hsl(0, 100%, 74%) ;
+}
+@media only screen and (max-width: 800px) {
+    .hero-wrapper{
+        flex-direction: column;
+    }
+  }
